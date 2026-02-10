@@ -23,16 +23,28 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // --- Chat Hover Sound ---
-  const hoverSound = new Audio('./assets/sounds/click.mp3');
-  hoverSound.volume = 0.2;
+  // Video
+  const video = document.getElementById("relaxVideo");
+  const playBtn = document.getElementById("videoPlayBtn");
 
-  const chatButtons = document.querySelectorAll('.chat-btn');
-  chatButtons.forEach(btn => {
-    btn.addEventListener('mouseenter', () => {
-      hoverSound.currentTime = 0;
-      hoverSound.play();
-    });
+  // Show play button initially
+  playBtn.style.display = "flex";
+
+  // Play/unmute on click
+  playBtn.addEventListener("click", () => {
+    video.muted = false;  // unmute
+    video.play().catch(() => console.log("User interaction needed to play video"));
+    playBtn.style.display = "none"; // hide button after play
+  });
+
+  // Hide button if video is already playing
+  video.addEventListener("play", () => {
+    playBtn.style.display = "none";
+  });
+
+  // Show button if video is paused
+  video.addEventListener("pause", () => {
+    playBtn.style.display = "flex";
   });
 
 });
