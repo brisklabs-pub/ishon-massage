@@ -41,6 +41,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- External CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -181,8 +182,7 @@
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-content">
-        <p class="copyright">© 2026 Ishon Massage. All rights reserved.</p>
-
+        <p class="copyright">© <span id="currentYear"></span> Ishon Massage. All rights reserved.</p>
         <p class="credits">
           Build by:
           <a href="https://www.brisklabs.dev" target="_blank">
@@ -191,19 +191,6 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
-
-  <script>
-    const toggle = document.getElementById("chatToggle");
-    const options = document.getElementById("chatOptions");
-    toggle.addEventListener("click", () => {
-      options.classList.toggle("show");
-    });
-
-    const contactToggle = document.getElementById("toggleContact");
-    contactToggle.addEventListener("click", () => {
-      options.classList.toggle("show");
-    });
-</script>
-
 </html>
