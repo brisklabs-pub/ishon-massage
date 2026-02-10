@@ -79,9 +79,9 @@
             </p>
             <p><i class="fa-solid fa-clock"></i> 4:00 PM – 04:00 AM Daily</p>
           </div>
-          <div class="buttons">
+          <div class="buttons" id="toggleContact">
             <!-- price badge -->
-            <a href="#contact" class="btn btn-contact">
+            <a href="#" class="btn btn-contact">
               <i class="fa-solid fa-phone"></i>
               Contact Us
             </a>
@@ -149,28 +149,34 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section id="contact" class="cta">
-      <div class="container">
-        <h2>Call Us or Message Us to Book!</h2>
-        <a href="tel:+639393508432" class="btn btn-call">
+    <!-- Floating Contact Button -->
+    <div class="chat-float">
+
+      <button class="chat-toggle" id="chatToggle">
+        <i class="fa-solid fa-comment"></i>
+      </button>
+
+      <div class="chat-options" id="chatOptions">
+
+        <a href="tel:+639393508432" class="chat-btn call">
           <i class="fa-solid fa-phone"></i>
-          Call Now
         </a>
-        <a href="viber://chat?number=%2B639393508432" class="btn btn-viber">
+
+        <a href="viber://chat?number=%2B639393508432" class="chat-btn viber">
           <i class="fab fa-viber"></i>
-          Viber
         </a>
-        <a href="https://wa.me/639393508432" class="btn btn-whatsapp">
+
+        <a href="https://wa.me/639393508432" class="chat-btn whatsapp">
           <i class="fab fa-whatsapp"></i>
-          WhatsApp
         </a>
-        <a href="https://t.me/YOUR_USERNAME" class="btn btn-telegram">
+
+        <a href="https://t.me/YOUR_USERNAME" class="chat-btn telegram">
           <i class="fa-brands fa-telegram"></i>
-          Telegram
         </a>
+
       </div>
-    </section>
+
+    </div>
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -186,4 +192,18 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const toggle = document.getElementById("chatToggle");
+    const options = document.getElementById("chatOptions");
+    toggle.addEventListener("click", () => {
+      options.classList.toggle("show");
+    });
+
+    const contactToggle = document.getElementById("toggleContact");
+    contactToggle.addEventListener("click", () => {
+      options.classList.toggle("show");
+    });
+</script>
+
 </html>
