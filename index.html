@@ -16,7 +16,7 @@
     />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Bliss Massage Spa" />
+    <meta property="og:title" content="Ishon Massage" />
     <meta
       property="og:description"
       content="Relax, recharge, and rejuvenate with our premium massage packages."
@@ -47,39 +47,44 @@
 
   <body>
     <!-- HERO -->
-
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <img
-            class="logo"
-            src="./assets/images/logo.svg"
-            alt="Ishon Massage Logo"
-          />
-          <div class="name">Ishon</div>
-          <div class="subtitle">Massage</div>
-          <a href="#" class="btn">Prices start at 850</a>
-
-          <p>Condo and Hotel Service Only</p>
-          <p><strong>Locations:</strong> Mandaluyong, Ortigas, BGC, Makati</p>
-          <p><strong>Hours:</strong> 4:00 PM – 04:00 AM Daily</p>
+          <!-- Brand row -->
+          <div class="brand">
+            <img
+              class="logo"
+              src="./assets/images/logo.svg"
+              alt="Ishon Massage Logo"
+            />
+            <div class="brand-text">
+              <div class="name">Ishon</div>
+              <div class="subtitle">Massage</div>
+            </div>
+          </div>
+          <a href="#packages" class="price-cta">
+            Prices start at ₱850
+            <span>View Packages →</span>
+          </a>
         </div>
 
         <div class="hero-right">
           <h2>Call or Message Us</h2>
+          <!-- details -->
+          <div class="hero-details">
+            <p><strong>Condo and Hotel Service Only</strong></p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Mandaluyong, Ortigas,
+              BGC, Makati
+            </p>
+            <p><i class="fa-solid fa-clock"></i> 4:00 PM – 04:00 AM Daily</p>
+          </div>
           <div class="buttons">
-            <a href="#" class="btn btn-call"
-              ><i class="fa-solid fa-phone"></i> Call Now</a
-            >
-            <a href="#" class="btn btn-viber"
-              ><i class="fab fa-viber"></i> Viber</a
-            >
-            <a href="#" class="btn btn-whatsapp"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a href="#" class="btn btn-telegram"
-              ><i class="fa-brands fa-telegram"></i> Telegram</a
-            >
+            <!-- price badge -->
+            <a href="#contact" class="btn btn-contact">
+              <i class="fa-solid fa-phone"></i>
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
@@ -100,7 +105,7 @@
     </section>
 
     <!-- PACKAGES -->
-    <section class="packages">
+    <section id="packages" class="packages">
       <div class="container">
         <h2>Massage Packages</h2>
         <div class="cards">
@@ -145,25 +150,40 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta">
+    <section id="contact" class="cta">
       <div class="container">
-        <h2>Call Us Now or Message Us to Book!</h2>
-       <a href="#" class="btn btn-call"
-              ><i class="fa-solid fa-phone"></i> Call Now</a
-            >
-            <a href="#" class="btn btn-viber"
-              ><i class="fab fa-viber"></i> Viber</a
-            >
-            <a href="#" class="btn btn-whatsapp"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a href="#" class="btn btn-telegram"
-              ><i class="fa-brands fa-telegram"></i> Telegram</a
-            >
+        <h2>Call Us or Message Us to Book!</h2>
+        <a href="tel:+639393508432" class="btn btn-call">
+          <i class="fa-solid fa-phone"></i>
+          Call Now
+        </a>
+        <a href="viber://chat?number=%2B639393508432" class="btn btn-viber">
+          <i class="fab fa-viber"></i>
+          Viber
+        </a>
+        <a href="https://wa.me/639393508432" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+        </a>
+        <a href="https://t.me/YOUR_USERNAME" class="btn btn-telegram">
+          <i class="fa-brands fa-telegram"></i>
+          Telegram
+        </a>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>© 2026 Bliss Massage Spa — All Rights Reserved</footer>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="copyright">© 2026 Ishon Massage. All rights reserved.</p>
+
+        <p class="credits">
+          Build by:
+          <a href="https://www.brisklabs.dev" target="_blank">
+            briskLabs.dev
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
